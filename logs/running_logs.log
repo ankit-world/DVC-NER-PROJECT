@@ -1,0 +1,76 @@
+[2023-02-27 16:19:03,869: INFO: data_ingestion]: 
+********************
+[2023-02-27 16:19:03,869: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2023-02-27 16:19:03,869: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-02-27 16:20:04,812: ERROR: data_ingestion]: 504 Server Error: Gateway Time-out for url: https://huggingface.co/api/datasets/xtreme
+Traceback (most recent call last):
+  File "src/NER_data_ingestion/data_ingestion.py", line 44, in <module>
+    main(config_path=parsed_args.config)
+  File "src/NER_data_ingestion/data_ingestion.py", line 34, in main
+    data_ingestion.get_data()
+  File "src/NER_data_ingestion/data_ingestion.py", line 27, in get_data
+    en_data = load_dataset(self.dataset_name, self.subset, cache_dir=self.cache_dir )
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1759, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1496, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1218, in dataset_module_factory
+    raise e1 from None
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1185, in dataset_module_factory
+    raise e
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1158, in dataset_module_factory
+    dataset_info = hf_api_dataset_info(
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\utils\_hf_hub_fixes.py", line 152, in dataset_info
+    return hf_api.dataset_info(repo_id, revision=revision, timeout=timeout, use_auth_token=use_auth_token)
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\huggingface_hub\utils\_validators.py", line 124, in _inner_fn
+    return fn(*args, **kwargs)
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\huggingface_hub\hf_api.py", line 1691, in dataset_info
+    hf_raise_for_status(r)
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\huggingface_hub\utils\_errors.py", line 318, in hf_raise_for_status
+    raise HfHubHTTPError(str(e), response=response) from e
+huggingface_hub.utils._errors.HfHubHTTPError: 504 Server Error: Gateway Time-out for url: https://huggingface.co/api/datasets/xtreme
+[2023-02-27 16:21:14,572: INFO: data_ingestion]: 
+********************
+[2023-02-27 16:21:14,572: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2023-02-27 16:21:14,573: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-02-27 16:22:15,533: ERROR: data_ingestion]: 504 Server Error: Gateway Time-out for url: https://huggingface.co/api/datasets/xtreme
+Traceback (most recent call last):
+  File "src/NER_data_ingestion/data_ingestion.py", line 44, in <module>
+    main(config_path=parsed_args.config)
+  File "src/NER_data_ingestion/data_ingestion.py", line 34, in main
+    data_ingestion.get_data()
+  File "src/NER_data_ingestion/data_ingestion.py", line 27, in get_data
+    en_data = load_dataset(self.dataset_name, self.subset, cache_dir=self.cache_dir )
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1759, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1496, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1218, in dataset_module_factory
+    raise e1 from None
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1185, in dataset_module_factory
+    raise e
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\load.py", line 1158, in dataset_module_factory
+    dataset_info = hf_api_dataset_info(
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\datasets\utils\_hf_hub_fixes.py", line 152, in dataset_info
+    return hf_api.dataset_info(repo_id, revision=revision, timeout=timeout, use_auth_token=use_auth_token)
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\huggingface_hub\utils\_validators.py", line 124, in _inner_fn
+    return fn(*args, **kwargs)
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\huggingface_hub\hf_api.py", line 1691, in dataset_info
+    hf_raise_for_status(r)
+  File "D:\Insights\NLP Projects\DVC-NER-PROJECT\env\lib\site-packages\huggingface_hub\utils\_errors.py", line 318, in hf_raise_for_status
+    raise HfHubHTTPError(str(e), response=response) from e
+huggingface_hub.utils._errors.HfHubHTTPError: 504 Server Error: Gateway Time-out for url: https://huggingface.co/api/datasets/xtreme
+[2023-02-27 16:34:25,574: INFO: data_ingestion]: 
+********************
+[2023-02-27 16:34:25,574: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2023-02-27 16:34:25,585: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-02-27 16:36:41,661: INFO: data_ingestion]: dataset downloaded at: artifacts\cache_dir
+[2023-02-27 16:36:41,662: INFO: data_ingestion]: >>>>> stage Data Ingestion stage completed!<<<<<
+
+[2023-02-27 16:50:40,288: INFO: data_ingestion]: 
+********************
+[2023-02-27 16:50:40,288: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2023-02-27 16:50:40,288: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-02-27 16:53:04,959: INFO: data_ingestion]: dataset downloaded at: artifacts\cache_dir
+[2023-02-27 16:53:04,960: INFO: data_ingestion]: >>>>> stage Data Ingestion stage completed!<<<<<
+
