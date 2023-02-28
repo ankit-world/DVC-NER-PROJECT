@@ -1,10 +1,9 @@
 import sys
-from typing import ClassVar
-
+from typing import Type
 
 class CustomException(Exception):
 
-    def __init__(self, error_message: Exception, error_detail: ClassVar):
+    def __init__(self, error_message: Exception, error_detail: Type):
         super().__init__(error_message)
         self.error_message = CustomException.get_detailed_error_message(error_message=error_message,
                                                                         error_detail=error_detail

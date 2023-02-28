@@ -13,6 +13,8 @@ notebook
 fastapi==0.78.0
 seqeval==1.2.2
 accelerate==0.5.1
+from-root==1.0.2
+typing
 
 ### local packages -
 -e . # << uncomment this to install from setup.py

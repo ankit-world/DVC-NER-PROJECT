@@ -26,7 +26,7 @@ class Configuration:
             dataset_name = self.config[DATA_INGESTION_KEY][DATASET_NAME]
             subset_name = self.config[DATA_INGESTION_KEY][SUBSET_NAME]
 
-            data_store = os.path.join(from_root(), self.config[PATH_KEY][ARTIFACTS_KEY],
+            data_store = os.path.join(self.config[PATH_KEY][ARTIFACTS_KEY],
                                       self.config[PATH_KEY][DATA_STORE_KEY])
 
             data_ingestion_config = DataIngestionConfig(

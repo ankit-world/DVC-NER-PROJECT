@@ -37,4 +37,4 @@ class DataIngestion:
 if __name__ == "__main__":
     project_config = Configuration()
     ingestion = DataIngestion(project_config.get_data_ingestion_config())
-    print(ingestion)
+    ingestion.get_data()
