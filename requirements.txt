@@ -6,9 +6,13 @@ numpy
 PyYAML
 mkdocs-material
 datasets
-transformers[sentencepiece]
+transformers[sentencepiece,optuna,sklearn,onnxruntime]==4.11.3
 folium==0.2.1
 tensorflow
+notebook
+fastapi==0.78.0
+seqeval==1.2.2
+accelerate==0.5.1
 
 ### local packages -
 -e . # << uncomment this to install from setup.py
